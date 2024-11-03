@@ -31,30 +31,30 @@ public class Clickable : MonoBehaviour
 
     private void FireDamage()
     {
-        float detectionRadius = 10f; // Radius deteksi, dapat diubah sesuai kebutuhan
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, detectionRadius);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 10f, damageableLayer);
 
-        if (hit != null)
+        Debug.DrawRay(transform.position, transform.right * 10f, Color.red);
+
+        if (hit.collider != null)
         {
-            Debug.Log("Hit object: " + hit.gameObject.name); // Menampilkan nama objek yang terdeteksi
-            Damageable target = hit.GetComponent<Damageable>();
+            Debug.Log("Hit object: " + hit.collider.gameObject.name);
+            Damageable target = hit.collider.GetComponent<Damageable>();
 
             if (target != null)
             {
-                target.TakeDamage(damage); // Berikan damage jika objek memiliki komponen Damageable
+                target.TakeDamage(damage);
                 Debug.Log("Damage dealt to target: " + damage);
             }
             else
             {
-                Debug.Log("Hit object does not have Damageable component: " + hit.gameObject.name);
+                Debug.Log("Hit object does not have Damageable component: " + hit.collider.gameObject.name);
             }
         }
         else
         {
-            Debug.Log("No target hit within detection radius.");
+            Debug.Log("No target hit.");
         }
     }
-
 
 
 
