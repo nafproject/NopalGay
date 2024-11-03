@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 54ec6b28da8761b4bae8cf7a9286078b
+guid: 1ce04876da3a0814a952cf812222639d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,91 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: animasi lepas panah_0
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 0
-        width: 103
-        height: 168
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b51c6e552713af48adf7aed23e248a1
-      internalID: 1814714632
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animasi lepas panah_1
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 0
-        width: 106
-        height: 168
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d35c81999bb93c842be87edcc0eb2a71
-      internalID: 530347238
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animasi lepas panah_2
-      rect:
-        serializedVersion: 2
-        x: 260
-        y: 0
-        width: 106
-        height: 168
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a5c0fe1f7517e54b80165e72937ff68
-      internalID: 1470197580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animasi lepas panah_3
-      rect:
-        serializedVersion: 2
-        x: 388
-        y: 0
-        width: 106
-        height: 168
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d12f7885519de8b4b9e098d3c5673f79
-      internalID: 393909223
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -203,11 +119,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      animasi lepas panah_0: 1814714632
-      animasi lepas panah_1: 530347238
-      animasi lepas panah_2: 1470197580
-      animasi lepas panah_3: 393909223
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

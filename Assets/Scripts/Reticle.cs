@@ -99,14 +99,20 @@ public class Reticle : MonoBehaviour
         }
     }
 
-    private void FireProjectiles()
+    public void FireProjectiles()
     {
-        for (int i = 0; i < launchPoints.Count; i++)
+        // Pastikan Reticle aktif sebelum menembak
+        if (this.gameObject.activeInHierarchy)
         {
-            launchPoints[i].GetComponent<ShootProjectile>().FireProjectile();
+            for (int i = 0; i < launchPoints.Count; i++)
+            {
+                launchPoints[i].GetComponent<ShootProjectile>().FireProjectile();
+            }
+            this.gameObject.SetActive(false); // Ini menonaktifkan reticle setelah menembak
         }
-        this.gameObject.SetActive(false);
     }
+
+
 
     private int count = 0;
     private IEnumerator LerpObject(GameObject item, Vector3 pos, float time)
